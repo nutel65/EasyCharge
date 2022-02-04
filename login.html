@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <!-- <script src="store.js" async></script> -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="access_control.js"></script>
+        <script src="login.js"></script>
+    </head>
+    <body onload="loginPageLoad()">
+        <div class="navbar">
+            <a href="index.html"><img src="img/logo_white_1.png" class="logo_white"></a>
+            <div class="navbar-container">
+                <a href="charge.html" class="navbar-container-btn btn-hover1">Naładuj samochód</a>
+                <a href="faq.html" class="navbar-container-btn btn-hover1">FAQ</a>
+                <a href="contact.html"class="navbar-container-btn btn-hover1">Kontakt</a>
+                <a id="js-navbar-login-btn" href="login.html" class="navbar-container-btn btn-hover1">Zaloguj</a>
+            </div>
+        </div>
+        <main class="content js-logged-out-only" >
+            <div class="content-secondary gray narrow2">
+                <section class="panel-split">
+                    <div class="center some-margin center">
+                        <div class="center"><h1>Logowanie</h1></div>
+                        <form id="login-form" class="column login-form">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="login-email" name="email" placeholder="wprowadź e-mail">
+                            <label for="password">Hasło</label>
+                            <input type="password" id="login-password" name="password" placeholder="wprowadź hasło">
+                            <input class="some-margin submit-btn" id="login-submit" type="button" value="Logowanie">
+                        </form>
+                        <div id="login-error-text" class="some-margin center error-text"></div>
+                    </div>
+                    <div class="vr2"></div>
+                    <div class="center some-margin">
+                        <div class="center"><h1>Rejestracja konta</h1></div>
+                        <form class="column login-form">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="register-email" name="email" placeholder="wprowadź swój e-mail">
+                            <label for="password">Hasło</label>
+                            <input type="password" id="register-password" name="password" placeholder="wprowadź hasło">
+                            <label for="repeat_password"></label>
+                            <input type="password" id="register-repeat-password" name="repeat_password" placeholder="powtórz hasło">
+                            <input class="some-margin submit-btn" id="register-submit" type="button" value="Rejestracja">
+                        </form>
+                        <div id="register-error-text" class="some-margin center error-text"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class="content js-logged-in-only">
+            <h1 class="gray center some-margin panel">Jesteś już zalogowany. Kliknij <a href="admin.html">tutaj</a> aby zarządzać swoim kontem.</h1>
+        </div>
+        <div class="footer">
+            <span class="footer-text">Copyright © 2022 EasyCharge</span>
+        </div>
+    </body>
+</html>
+

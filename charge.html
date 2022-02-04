@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="charge.js"></script>
+        <script src="access_control.js"></script>
+        <style></style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html"><img src="img/logo_white_1.png" class="logo_white"></a>
+            <div class="navbar-container">
+                <a href="charge.html" class="navbar-container-btn btn-hover1">Naładuj samochód</a>
+                <a href="faq.html" class="navbar-container-btn btn-hover1">FAQ</a>
+                <a href="contact.html"class="navbar-container-btn btn-hover1">Kontakt</a>
+                <a id="js-navbar-login-btn" href="login.html" class="navbar-container-btn btn-hover1">Zaloguj</a>
+            </div>
+        </div>
+        <main class="content js-logged-in-only">
+            <div class="panel-split">
+                <div class="sidepanel gray">
+                    <div class="center h1-like" id="js_sidepanel_text1">Naładuj samochód (1/3)</div>
+                    <div class="center h2-like" id="js_sidepanel_text2">Wybierz punkt ładowania</div>
+                    <hr>
+                    <section id="js-select-station" class="container center">
+                        <br>
+                        <div class="center js-station-button clickable">Orlen</div>
+                        <br>
+                        <div class="center js-station-button clickable">GreenWay</div>
+                        <br>
+                        <div class="center js-station-button clickable">EVplus</div>
+                        <br>
+                        <div class="center js-station-button clickable">Revnet</div>
+                        <br>
+                    </section>
+                    <div id="js-selected-station-div" style="display:none;">
+                        <h2 class="center section-header">Stacje <span id="js-station-name-text"></span></h2>
+                    </div>
+                    <section id="js-select-items" style="display:none;" class="container content-section center">
+                    </section>
+                    <section id="js-select-amount" style="display:none;" class="container content-section center">
+                        <hr>
+                        Wybierz ilość energii, którą chcesz doładować:
+                        <br>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="300" value="20" id="js-amount-slider"><span id="js-slider-value-text"></span>&nbspKWh
+                        </div>
+                        <p>
+                            <span id="js-total-text"></span>
+                        </p>
+                        <br>
+                        <div id="js-pay-button" style="display: none;" class="white-button center clickable">Zapłać</div>
+                    </section>
+                </div>
+                <div id="js_map" class="gmaps">
+                    <iframe allowfullscreen="" 
+                            loading="lazy" 
+                            width="100%"
+                            height="500px"
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d65490.57144819915!2d16.91092316480095!3d52.410157278717534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sstacje%20%C5%82adowania%20samochod%C3%B3w%20elektrycznych!5e0!3m2!1spl!2spl!4v1642601326099!5m2!1spl!2spl">
+                    </iframe>
+                </div>
+            </div>
+        </main>
+        <div class="content js-logged-out-only">
+            <h1 class="gray center some-margin panel">Aby przejść do tej podstrony musisz się <a href="login.html">zalogować</a></h1>
+        </div>
+        <div class="footer">
+            <span class="footer-text">Copyright © 2022 EasyCharge</span>
+        </div>
+    </body>
+</html>

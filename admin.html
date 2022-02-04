@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="access_control.js"></script>
+        <script src="admin.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html"><img src="img/logo_white_1.png" class="logo_white"></a>
+            <div class="navbar-container">
+                <a href="charge.html" class="navbar-container-btn btn-hover1">Naładuj samochód</a>
+                <a href="faq.html" class="navbar-container-btn btn-hover1">FAQ</a>
+                <a href="contact.html"class="navbar-container-btn btn-hover1">Kontakt</a>
+                <a id="js-navbar-login-btn" href="login.html" class="navbar-container-btn btn-hover1">Zaloguj</a>
+            </div>
+        </div>
+        <main class="content js-logged-in-only">
+            <div class="content-secondary gray narrow2">
+                <div class="center some-margin">
+                    <div class="some-margin h2-like">Zarządzanie kontem</div>
+                    <div class="some-margin description">zalogowano jako <b><span id="js-logged-as-text"></span></b></div>
+                    <hr>
+                    <form>
+                        <input id="js-delete-account-btn" class="submit-btn some-margin" type="button" value="Usuń konto ">
+                        <input id="js-log-out-btn" class="submit-btn some-margin" type="button" value="Wyloguj się">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <div class="content js-logged-out-only">
+            <h1 class="gray center some-margin panel">Aby przejść do tej podstrony musisz się <a href="login.html">zalogować</a></h1>
+        </div>
+        <div class="footer">
+            <span class="footer-text">Copyright © 2022 EasyCharge</span>
+        </div>
+    </body>
+</html>
+

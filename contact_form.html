@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="access_control.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html"><img src="img/logo_white_1.png" class="logo_white"></a>
+            <div class="navbar-container">
+                <a href="charge.html" class="navbar-container-btn btn-hover1">Naładuj samochód</a>
+                <a href="faq.html" class="navbar-container-btn btn-hover1">FAQ</a>
+                <a href="contact.html"class="navbar-container-btn btn-hover1">Kontakt</a>
+                <a id="js-navbar-login-btn" href="login.html" class="navbar-container-btn btn-hover1">Zaloguj</a>
+            </div>
+        </div>
+        <main class="content">
+            <div class="content-secondary gray narrow2">
+                <div class="center some-margin">
+                    <div class="center"><h2>Formularz kontaktowy</h1></div>
+                    <form class="column contact-form" method="POST" target="alert('przesłano formularz')">
+                        <label for="email">E-mail (opcjonalnie)</label>
+                        <input type="text" name="email" placeholder="e-mail">
+                        <br>
+                        <label for="message">Wiadomość</label>
+                        <textarea placeholder="Wpisz tutaj wiadomość, którą chcesz wysłać twórcom usługi."></textarea>
+                        <input class="submit-btn some-margin" type="submit" value="Wyślij">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+            <span class="footer-text">Copyright © 2022 EasyCharge</span>
+        </div>
+    </body>
+</html>
+
